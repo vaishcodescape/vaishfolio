@@ -677,8 +677,8 @@ export default function Home() {
       <section className="flex justify-center pb-12">
         <a
           ref={resumeButtonRef}
-          href="/Aditya_Vaish.pdf"
-          download="Aditya_Vaish.pdf"
+          href="/Aditya Vaish Resume.pdf"
+          download="Aditya Vaish Resume.pdf"
           className="group inline-flex items-center gap-2 rounded-lg bg-accent px-8 py-4 text-base font-medium text-accent-foreground shadow-lg transition-all hover:shadow-xl"
         >
           Download Resume

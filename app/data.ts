@@ -44,7 +44,7 @@ export const PROJECTS: Project[] = [
     tags: ['Python', 'Scapy', 'PyShark', 'python-nmap'],
   },
   {
-    name: 'Zane',
+    name: 'Code-Clock',
     description:
       'Built a Go-based codebase analysis and optimization tool that scans large repositories to identify performance bottlenecks, redundant code paths, and structural inefficiencies. Designed a modular CLI with YAML-driven configuration and a gRPC-based service architecture for scalable analysis pipelines. Leveraged concurrency with goroutines and worker pools to process repositories in parallel, improving analysis speed and enabling actionable optimization insights for developers.',
     link: 'https://github.com/vaishcodescape/Zane',

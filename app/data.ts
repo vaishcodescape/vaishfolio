@@ -35,48 +35,29 @@ type TechStackCategory = {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'Devolution Official Website',
+    name: 'Arcturus',
     description:
-      'Official website of Devolution, a community of developers and tech enthusiasts.',
-    link: 'https://devolution.dscdaiict.in',
-    github: 'https://github.com/gdg-da/Dev-o-lution-26.git',
+      'Built a Python network probing & client-discovery tool that detects Wi-Fi (including hidden SSIDs) and wired networks, identifies active clients via passive/active scanning, and visualizes network topology with graph-based mapping; summarizes device activity via DNS, HTTP host headers, and TLS SNI metadata. Added host stealth mode and network access-control features for security testing.',
+    link: 'https://github.com/vaishcodescape/Arcturus',
+    github: 'https://github.com/vaishcodescape/Arcturus',
     id: 'project1',
-    tags: ['Next.js', 'Open Source', 'TypeScript', 'Web Platform'],
-  
+    tags: ['Python', 'Scapy', 'PyShark', 'python-nmap'],
   },
   {
-    name: 'Keradon',
+    name: 'Zane',
     description:
-      'AI-Powered web scraper that intelligently summarizes website content using Groq LLM.',
-    link: 'https://github.com/vaishcodescape/Keradon-App',
-    github: 'https://github.com/vaishcodescape/Keradon-App',
+      'Built a Go-based codebase analysis and optimization tool that scans large repositories to identify performance bottlenecks, redundant code paths, and structural inefficiencies. Designed a modular CLI with YAML-driven configuration and a gRPC-based service architecture for scalable analysis pipelines. Leveraged concurrency with goroutines and worker pools to process repositories in parallel, improving analysis speed and enabling actionable optimization insights for developers.',
+    link: 'https://github.com/vaishcodescape/Zane',
+    github: 'https://github.com/vaishcodescape/Zane',
     id: 'project2',
-    tags: ['AI/ML', 'Web Scraping', 'Groq LLM', 'Python'],
- 
-  },
-  {
-    name: 'AirOps.ai',
-    description: 'Prompt based agentic A.I agent to automate desktop workflows',
-    link: 'https://github.com/vaishcodescape/airops.ai.git',
-    github: 'https://github.com/vaishcodescape/airops.ai.git',
-    id: 'project3',
-    tags: ['Agentic A.I', 'Langchain', 'Python', 'FastAPI', 'Hugging Face'],
-
-  },
-  {
-    name: 'Opticom',
-    description: 'Fast multi-client communication server built with C++ sockets and multi-threading for efficient concurrent connections.',
-    link: 'https://github.com/vaishcodescape/Opticom',
-    github: 'https://github.com/vaishcodescape/Opticom',
-    id: 'project4',
-    tags: ['C++', 'Sockets', 'Multi-threading', 'Network Programming'],
+    tags: ['Go', 'gRPC', 'CLI', 'YAML'],
   },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
 
-    company:'Datacurve.ai YC 24',
+    company:'Datacurve.ai YC W24',
     title:'OSS Code Eval Team',
     start:'Jan 2026',
     end:'Present',
@@ -167,7 +148,7 @@ export const TECH_STACK: TechStackCategory[] = [
   },
   {
     category:'A.I/M.L',
-    technologies: ['Hugging Face Transformers','LangGraph','Langchain','LlamaIndex','LLM API', 'Google-Colab'],
+    technologies: ['Hugging Face Transformers','LangGraph','Langchain','LlamaIndex'],
   },
   {
     category: 'Databases',

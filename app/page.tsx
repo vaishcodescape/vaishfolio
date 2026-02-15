@@ -1,6 +1,6 @@
 "use client"
 import { ArrowUpRight } from "lucide-react"
-import { PROJECTS, WORK_EXPERIENCE, ACHIEVEMENTS, TECH_STACK, EMAIL, SOCIAL_LINKS } from "./data"
+import { WORK_EXPERIENCE, ACHIEVEMENTS, TECH_STACK, EMAIL, SOCIAL_LINKS } from "./data"
 import Image from "next/image"
 import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
@@ -28,10 +28,6 @@ export default function Home() {
   // Experience Section Refs
   const experienceRef = useRef<HTMLElement>(null)
   const experienceItemsRef = useRef<HTMLElement[]>([])
-
-  // Projects Section Refs
-  const projectsRef = useRef<HTMLElement>(null)
-  const projectCardsRef = useRef<HTMLElement[]>([])
 
   // Tech Stack Section Refs
   const techStackRef = useRef<HTMLElement>(null)
@@ -162,52 +158,6 @@ export default function Home() {
           
           item.addEventListener("mouseenter", handleMouseEnter)
           item.addEventListener("mouseleave", handleMouseLeave)
-        }
-      })
-
-      // Projects Section - Staggered Card Reveals with better intersection
-      projectCardsRef.current.forEach((card, index) => {
-        if (card) {
-          gsap.set(card, { opacity: 0, y: 60, scale: 0.92 })
-          
-          ScrollTrigger.create({
-            trigger: card,
-            start: "top 82%",
-            end: "top 45%",
-            toggleActions: "play none none reverse",
-            animation: gsap.to(card, {
-              opacity: 1,
-              y: 0,
-              scale: 1,
-              duration: 0.7,
-              delay: index * 0.08,
-              ease: "power3.out",
-            }),
-          })
-
-          // Hover lift effect
-          const cardLink = card.querySelector("a")
-          if (cardLink) {
-            const handleMouseEnter = () => {
-              gsap.to(card, {
-                y: -10,
-                scale: 1.02,
-                duration: 0.4,
-                ease: "power2.out",
-              })
-            }
-            const handleMouseLeave = () => {
-              gsap.to(card, {
-                y: 0,
-                scale: 1,
-                duration: 0.4,
-                ease: "power2.out",
-              })
-            }
-            
-            cardLink.addEventListener("mouseenter", handleMouseEnter)
-            cardLink.addEventListener("mouseleave", handleMouseLeave)
-          }
         }
       })
 
@@ -527,53 +477,6 @@ export default function Home() {
                 </p>
               </div>
             </a>
-          ))}
-        </div>
-      </section>
-
-      {/* Projects Section */}
-      <section ref={projectsRef} className="space-y-8">
-        <h3 className="text-sm uppercase tracking-wider text-muted-foreground">
-          Projects
-        </h3>
-        <div className="grid gap-6 md:grid-cols-2 md:auto-rows-fr">
-          {PROJECTS.map((project, index) => (
-            <div
-              key={project.name}
-              ref={(el) => {
-                if (el) projectCardsRef.current[index] = el
-              }}
-              className="group relative h-full"
-            >
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-full flex-col space-y-4 rounded-lg border border-border bg-card p-6 transition-all hover:border-accent/50 hover:shadow-lg"
-              >
-                <div className="flex items-start justify-between gap-2">
-                  <h4 className="text-lg font-medium text-foreground group-hover:text-accent transition-colors">
-                    {project.name}
-                  </h4>
-                  <ArrowUpRight className="h-5 w-5 shrink-0 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent" />
-                </div>
-                <p className="text-sm leading-relaxed text-muted-foreground grow">
-                  {project.description}
-                </p>
-                {project.tags && project.tags.length > 0 && (
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="rounded-md bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </a>
-            </div>
           ))}
         </div>
       </section>

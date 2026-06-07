@@ -114,21 +114,13 @@ export const TECH_STACK: TechStackCategory[] = [
     technologies: ['C', 'C++', 'Python', 'JavaScript', 'TypeScript'],
   },
   {
-    category: 'Frontend',
-    technologies: ['React.js', 'Next.js', 'Tailwind CSS'],
-  },
-  {
-    category: 'Backend',
-    technologies: ['Node.js', 'Express.js', 'Flask', 'FastAPI', 'Django'],
+    category: 'Libraries and Frameworks',
+    technologies: ['Langchain', 'FastAPI', 'React.js', 'Express.js', 'Next.js', 'Postgresql', 'Vector Databases'],
   },
   {
     category: 'DevOps & Cloud',
     technologies: ['AWS', 'Docker', 'Kubernetes', 'Vercel', 'Git', 'GitHub', 'GitLab'],
   },
-  {
-    category:'A.I/M.L',
-    technologies: ['Hugging Face Transformers','LangGraph','Langchain','LlamaIndex','Vector Embeddings', 'Vector Databases'],
-  }
 ]
 
 export const EMAIL = 'adityavaish846@gmail.com'

@@ -124,7 +124,7 @@ export default function Home() {
       {/* Resume */}
       <section>
         <a
-          href="https://drive.google.com/file/d/106oiEkzuv_AD18WImbqSi1boZ1qyvBqu/view?usp=sharing"
+          href="https://drive.google.com/file/d/199TX7Q4jlO5UJ8lN7vN3WJ94vAu7yZfj/view?usp=sharing"
           download="Aditya Vaish Resume.pdf"
           className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-zinc-200 transition-colors border border-zinc-800 px-4 py-2"
         >

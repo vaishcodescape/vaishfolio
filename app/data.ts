@@ -39,7 +39,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     company:'Datacurve.ai YC W24',
     title:'OSS Code Eval Team',
     start:'Jan 2026',
-    end:'Present',
+    end:'Jun 2026',
     link:'https://datacurve.ai',
     id:'work1',
   },

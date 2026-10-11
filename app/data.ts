@@ -35,13 +35,20 @@ type TechStackCategory = {
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-
-    company:'Datacurve.ai YC W24',
-    title:'OSS Code Eval Team',
-    start:'Jan 2026',
-    end:'Jun 2026',
-    link:'https://datacurve.ai',
-    id:'work1',
+    company: 'Wundr.fun',
+    title: 'Product Engineer',
+    start: 'Sep 2026',
+    end: 'Present',
+    link: 'https://www.wundr.fun/',
+    id: 'work5',
+  },
+  {
+    company: 'Datacurve.ai YC W24',
+    title: 'OSS Code Eval Team',
+    start: 'Jan 2026',
+    end: 'Jun 2026',
+    link: 'https://datacurve.ai',
+    id: 'work1',
   },
   {
     company: 'Google Developer Group (GDG) On Campus, DAU',
@@ -111,15 +118,42 @@ export const SOCIAL_LINKS: SocialLink[] = [
 export const TECH_STACK: TechStackCategory[] = [
   {
     category: 'Languages',
-    technologies: ['C', 'C++', 'Python', 'JavaScript', 'TypeScript'],
+    technologies: ['C', 'C++', 'Java', 'Python', 'JavaScript', 'TypeScript'],
   },
   {
     category: 'Libraries and Frameworks',
-    technologies: ['Langchain', 'FastAPI', 'React.js', 'Express.js', 'Next.js', 'Postgresql', 'Vector Databases'],
+    technologies: [
+      'PyTorch',
+      'Langchain',
+      'LlamaIndex',
+      'vLLM',
+      'FastAPI',
+      'React.js',
+      'React Native',
+      'Expo',
+      'Express.js',
+      'Next.js',
+    ],
+  },
+  {
+    category: 'Databases',
+    technologies: ['PostgreSQL', 'Redis', 'Apache Spark', 'MongoDB', 'Pinecone'],
   },
   {
     category: 'DevOps & Cloud',
-    technologies: ['AWS', 'Docker', 'Kubernetes', 'Vercel', 'Git', 'GitHub', 'GitLab'],
+    technologies: [
+      'AWS',
+      'Docker',
+      'Kubernetes',
+      'Nginx',
+      'GitHub Actions',
+      'Grafana',
+      'Prometheus',
+      'Vercel',
+      'Git',
+      'GitHub',
+      'GitLab',
+    ],
   },
 ]
 
